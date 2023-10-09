@@ -1,0 +1,129 @@
+.todo-list{
+    margin:0;
+    /* align-items: center; */
+    /* display:flex; */
+    /* justify-content: center; */
+    /* flex-direction:column; */
+}
+/* .heading{
+    margin:auto;
+    background: black;
+    color:white;
+    width:100%;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    font-weight: 800;
+} */
+header{
+    height: 15vh;
+    background-color: rgb(80, 79, 79);
+    color:white;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    padding: 0 4%;
+  }
+ 
+  header div{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:1.3rem;
+   
+  }
+  
+  header button{
+    border: 1px solid;
+    border-radius: 3px;
+  }
+  #reset-btn{
+    width: 6%;
+    height: 30%;
+    border:2px solid black;
+  }
+.enter-task{
+    display:flex;
+    justify-content: center;
+    margin-top:20px;
+}
+.input-btn{
+    display:flex;
+    justify-content: space-between;
+}
+button{
+    margin-left: 20px;
+}
+.pending-task-heading{
+    background: yellowgreen;
+    /* margin:5px; */
+    /* padding:5px; */
+    width:300px;
+    height:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    width:300px;
+    height:30px;
+    font-size: large;
+    font-weight:600;
+}
+.tasks{
+    margin-top: 50px;
+    display:flex;
+    justify-content: space-evenly;
+}
+.task-comp{
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.pending{
+    background:#1111;
+    border: 1px solid black;
+    color:green;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:10px;
+    padding-left:15px;
+    padding-right:15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+.pending h3{
+    margin-left:10px;
+}
+#circle{
+    color:pink
+}
+/* .btns{
+    display:flex;
+    flex-direction:column;
+} */
+.trash{
+    color:red;
+    font-size:1.5rem;
+}
+button{
+    background: rgb(60, 237, 225);
+}
+button:hover{
+    
+    background:rgb(180, 128, 230);
+}
+.task-done{
+    background: #1111;
+    background:#1111;
+    border: 1px solid black;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:10px;
+    padding-left:15px;
+    padding-right:15px;
+}
