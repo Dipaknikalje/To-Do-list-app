@@ -1,5 +1,6 @@
 .todo-list{
     margin:0;
+    overflow-x:hidden
     /* align-items: center; */
     /* display:flex; */
     /* justify-content: center; */
@@ -147,7 +148,7 @@ button:hover{
       .task{
         display:flex;
         flex-direction :column;
-        
+
       }
       .pending-task-heading{
         background: yellowgreen;
@@ -159,6 +160,11 @@ button:hover{
         /* justify-content: center; */
         flex-direction:column;
         /* align-items: center; */
+    }
+    .pending{
+        width:200px;
+        flex-wrap: wrap;
+        overflow: hidden;
     }
 }
 
