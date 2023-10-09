@@ -127,13 +127,12 @@ const Todo = () => {
                          <div className='btns'>
                             <FaTrash className='trash' onClick={()=>deleteItemHandle(index)}/>
                             </div>
-                        <h3>{post.Task}</h3>
-                       
-                      </div>
-                         );
-                }
-                  return null;
-})}
+                            <h3>{post.Task}</h3>
+                        </div>
+                      );
+                        }
+                return null;
+                  })}
                </div>
             </div>
         </div>
