@@ -87,7 +87,7 @@ input{
     border: 1px solid black;
     color:green;
     display:flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     margin:10px;
     padding-left:15px;
@@ -107,7 +107,7 @@ input{
 } */
 .trash{
     color:red;
-    font-size:1.5rem;
+    font-size:1rem;
 }
 button{
     background: rgb(60, 237, 225);
@@ -121,9 +121,13 @@ button:hover{
     background:#1111;
     border: 1px solid black;
     display:flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     margin:10px;
     padding-left:15px;
     padding-right:15px;
+}
+.task-done h3{
+    margin-left:20px;
+    font-size:1.2rem;
 }

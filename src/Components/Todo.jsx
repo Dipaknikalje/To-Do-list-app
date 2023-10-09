@@ -104,16 +104,9 @@ const Todo = () => {
                 {taskTodo.map((post,index)=>{
                 if(post.completed===false){
                         return(
-                            <div className='task-comp'>
-                                 <div className='btns'>
-                            {/* <button onClick={()=>markTodoComplete(index)}>Done</button> */}
-                            <FaTrash className='trash' onClick={()=>deleteItemHandle(index)}/>
-                            </div>
                             <div className='pending' key={index} onClick={()=>markTodoComplete(index)}>
                             <FaCircle id="circle"/>
                             <h3>{post.Task}</h3>
-                            </div>
-                           
                             </div>
                         )
                     }
@@ -131,7 +124,11 @@ const Todo = () => {
                 if(post.completed===true){
                   return (
                       <div className='task-done' key={index}>
+                         <div className='btns'>
+                            <FaTrash className='trash' onClick={()=>deleteItemHandle(index)}/>
+                            </div>
                         <h3>{post.Task}</h3>
+                       
                       </div>
                          );
                 }
