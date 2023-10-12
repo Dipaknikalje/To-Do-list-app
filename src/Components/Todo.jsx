@@ -6,7 +6,6 @@ const Todo = () => {
     const [task,setTask]=useState()
    
     const[taskTodo,setTaskTodo]=SaveTask("tasks",[]);
-
     //**handling the user input**
     const handleTask=(e)=>{
         e.preventDefault();
@@ -70,7 +69,8 @@ const Todo = () => {
 
     const handleReset=()=>{
         localStorage.clear();
-        window.location.reload()
+        // window.location.reload()
+        setTaskTodo([])
     }
  
 
