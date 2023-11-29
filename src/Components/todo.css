@@ -1,25 +1,23 @@
-.todo-list{
-    margin:0;
-    overflow-x:hidden
-    /* align-items: center; */
-    /* display:flex; */
-    /* justify-content: center; */
-    /* flex-direction:column; */
-}
+/* body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  } */
+
 
 header{
     height: 15vh;
     background-color: rgb(80, 79, 79);
     color:white;
-    margin-top: 0;
+    /* margin-top: 0;
     display: flex;
     align-items: center;
-    justify-content:flex-end;
+    justify-content:flex-end; */
     padding: 0 4%;
   }
  
   header div{
-    width: 80%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,9 +34,19 @@ header{
     height: 30%;
     border:2px solid black;
   }
-.enter-task{
+  .page-body{
     display:flex;
     justify-content: center;
+    align-items: center;
+  }
+  .enter-task-new{
+    display:flex;
+    justify-content: center;
+    margin-top:20px;
+  }
+.enter-task{
+    display:flex;
+    justify-content: space-around;
     margin-top:20px;
 }
 .input-btn{
@@ -48,81 +56,62 @@ header{
 button{
     margin-left: 20px;
 }
-.pending-task-heading{
-    background: yellowgreen;
-    /* margin:5px; */
-    /* padding:5px; */
-    width:300px;
-    height:50px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
+
 input{
     width:300px;
     height:30px;
     font-size: large;
     font-weight:600;
 }
-.tasks{
-    margin-top: 50px;
-    display:flex;
-    justify-content: space-evenly;
-}
-.task-comp{
-    display:flex;
-    align-items: center;
-    justify-content: flex-start;
-}
+
 .pending{
-    background:#1111;
-    border: 1px solid black;
-    color:green;
+    height:50px;
+    width:600px;
+    font-size: larger;
     display:flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items:center ;
     margin:10px;
     padding-left:15px;
     padding-right:15px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 }
+
 .pending h3{
     margin-left:10px;
 }
-#circle{
-    color:pink
-}
-/* .btns{
-    display:flex;
-    flex-direction:column;
-} */
-.trash{
-    color:red;
-    font-size:1rem;
-}
 button{
-    background: rgb(60, 237, 225);
+    background: white;
 }
 button:hover{
     
     background:rgb(180, 128, 230);
 }
-.task-done{
-    background: #1111;
-    background:#1111;
-    border: 1px solid black;
-    display:flex;
-    justify-content: flex-start;
-    align-items: center;
+
+.func-btn{
     margin:10px;
-    padding-left:15px;
-    padding-right:15px;
+    height:50px;
+    display: flex;
+
 }
-.task-done h3{
-    margin-left:20px;
-    font-size:1.2rem;
+.edit-btn{
+    color:black;
+    font-size:20px;
+    border:none;
+
 }
+.del-btn{
+    color:black;
+    font-size:20px;
+    border: none;
+}
+.allTask{
+    display:flex;
+    /* border: 1px black solid; */
+    margin:10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 @media only screen and (max-width: 1000px){
     header{
         width:100%;
@@ -135,36 +124,17 @@ button:hover{
         font-size:1rem;
        
       }
-      #reset-btn{
-        width: fit-content;
-        /* height: 30%; */
-        border:2px solid black;
-        position:relative;
-        right:25px;
-      }
+     
       button{
         margin:0
       }
-      .task{
-        display:flex;
-        flex-direction :column;
-
-      }
-      .pending-task-heading{
-        background: yellowgreen;
-        /* margin:5px; */
-        /* padding:5px; */
-        width:fit-content;
-        /* height:50px; */
-        /* display:flex; */
-        /* justify-content: center; */
-        flex-direction:column;
-        /* align-items: center; */
-    }
     .pending{
         width:200px;
         flex-wrap: wrap;
         overflow: hidden;
+    }
+    .enter-task-new{
+        justify-content: space-evenly;
     }
 }
 
